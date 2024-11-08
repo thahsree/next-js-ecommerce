@@ -10,9 +10,11 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
 }
-.fontbold{
-  font-weight: 900 !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.active{
+  border-bottom: 2px solid black;
+}
+.activefilter{
+  color: rgb(220, 38, 38);
 }
 .highlights::-webkit-scrollbar{
   display: none
@@ -20,7 +22,18 @@
 .highlights::-webkit-scrollbar{
   scrollbar-width: none
 }
+svg path {
+  fill: rgba(255, 255, 255, 0.623); /* Removes the fill */
+  stroke: none; /* Outline color */
+  stroke-width: .7; /* Outline thickness */
+  cursor: pointer;
+}
 
+/* Hover effect to change fill color */
+svg:hover path {
+  fill: red; /* Fills the shape with red on hover */
+  stroke: none; /* Removes the outline */
+}
 /* START: General styles */
 .max-width {
   @apply max-w-[1440px] mx-auto;
