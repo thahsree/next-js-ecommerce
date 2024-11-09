@@ -1,6 +1,7 @@
 "use client"
 import { ExpandingMenu } from '@/components';
 import Image from "next/image";
+import Link from 'next/link';
 import { useState } from "react";
 
 
@@ -31,14 +32,14 @@ const Navbar = () => {
                     <li className={`${navProp} ${currentSelection === 'Kids'? 'active':''}`} onMouseEnter={() => setCurrentSelection("Kids")}>Kids</li>
                     <li className={navProp} >About</li>
                 </ul>
-                <h3 className="font-bold font-inter text-[23px] text-nowrap max-sm:text-lg">E V E R L A N E</h3>
+                <Link href="/" className="font-bold font-inter text-[23px] text-nowrap max-sm:text-lg">E V E R L A N E</Link>
                 <div className="flex gap-5 h-full">
                     <p className={navProp}>
                         <Image src="/search.svg" width={20} height={20} alt="search" />
                     </p>
-                    <p className={navProp}>
+                    <Link href='/auth' className={navProp}>
                         <Image src="/user.svg" width={20} height={20} alt="user" />
-                    </p>
+                    </Link>
                     <p className={navProp}>
                         <Image src="/shopping-cart.svg" width={20} height={20} alt="cart" />
                     </p>

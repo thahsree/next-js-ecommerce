@@ -1,5 +1,6 @@
+import { Footer, Navbar } from "@/components";
 import type { Metadata } from "next";
-
+import './globals.css';
 
 export const metadata: Metadata = {
   title: "The Online Store",
@@ -23,9 +24,9 @@ export default function RootLayout({
         />
       </head>
       <body className="relative">
-      
+        <Navbar />
         {children}
-      
+        <Footer />
       </body>
     </html>
   );
