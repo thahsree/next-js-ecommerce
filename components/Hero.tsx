@@ -17,7 +17,10 @@ const Hero = () => {
             <p>Get peak comfy outfits </p>
             <p>with new winter essentials.</p>
           </div>
-          <button className="bg-white text-black px-9 rounded-md py-3 font-semibold transition ease-in-out duration-300 hover:bg-slate-200">SHOP NOW </button>
+          <a href="/home/products">
+            <button className="bg-white text-black px-9 rounded-md py-3 font-semibold transition ease-in-out duration-300 hover:bg-slate-200">SHOP NOW </button>
+
+          </a>
         </div>
       </div>
       <Trending />
@@ -42,7 +45,9 @@ const Hero = () => {
           <div className="flex flex-col items-center gap-0 text-lg font-bold">
             <p className="text-sm font-semibold">Black and White looks.</p>
           </div>
-          <button className="bg-white text-black max-sm:px-5 max-sm:py-2 px-9 rounded-md py-3 font-semibold transition ease-in-out duration-300 hover:bg-slate-200">SHOP NOW</button>
+          <a href="/home/products">
+            <button className="bg-white text-black px-9 rounded-md py-3 font-semibold transition ease-in-out duration-300 hover:bg-slate-200">SHOP NOW </button>
+          </a>
         </div>
       </div>
 

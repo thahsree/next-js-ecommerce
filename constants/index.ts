@@ -774,3 +774,24 @@ export const productData = [
 
     },
 ]
+
+
+export const singlePageData = [
+    {
+        title:'',
+        items:[
+            {
+                image:'/men11.jpg'
+            },
+            {
+                image:'/men12.jpg'
+            },
+            {
+                image:'/men14.jpeg'
+            },
+            {
+                image:'/men10.jpg'
+            },
+        ]
+    }
+]

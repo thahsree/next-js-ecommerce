@@ -1,10 +1,9 @@
 import { Corousal, ProductDetails } from "@/components";
-import { activeData } from "@/constants";
+import { activeData, singlePageData } from "@/constants";
 import Image from "next/image";
-
 export default function Single() {
 
-  const images = ["", "", "", ""]
+
   //get gender from global state
 
   const recommendedData = activeData.filter((item) => item.title === "Recommended For You");
@@ -13,22 +12,22 @@ export default function Single() {
       <div className="mb-3">
         <p className="text-gray-700 cursor-pointer">Home / Products / Product</p>
       </div>
-      <div className="flex">
+      <div className="flex max-lg:flex-col">
         <div className="flex-[5] flex flex-wrap gap-5 justify-center items-start">
           {
-            images.map((item, i) => (
-              <div key={i} className="h-[550px] w-[400px] relative">
-                <Image key={i} src='/men2.jpg' fill alt='product_image' className="object-fill" />
+            singlePageData[0].items.map((item, i) => (
+              <div key={i} className="h-[550px] w-[400px] relative max-sm:h-[350px] max-sm:w-[300px] max-lg:w-[40%] max-lg:h-[300px]">
+                <Image key={i} src={item.image} fill alt='product_image' className="object-fill" />
               </div>
             ))
           }
         </div>
-        <div className="flex-[3]">
-          <ProductDetails/>
+        <div className="flex-[3] max-lg:mt-5 max-lg:px-10">
+          <ProductDetails />
         </div>
       </div>
       <div className="flex w-full px-5 py-16">
-        <Corousal activeItem ={recommendedData[0]} type="Recommended For You"/>
+        <Corousal activeItem={recommendedData[0]} type="Recommended For You" />
       </div>
     </div>
   )

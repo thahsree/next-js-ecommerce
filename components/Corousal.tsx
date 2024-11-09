@@ -27,7 +27,7 @@ const Corousal = ({ activeItem, type }: CorousalProps) => {
 
   // Slick slider settings
   const settings = {
-    dots: activeItem.items.length > 6 ? true : false,
+    dots: activeItem?.items.length > 6 ? true : false,
     infinite: true,
     speed: 500,
     slidesToShow: 6,
@@ -89,7 +89,7 @@ const Corousal = ({ activeItem, type }: CorousalProps) => {
 
       <Slider {...settings}>
         {activeItem.items.map((item, i) => (
-          <Link key={i} href="/" className="">
+          <Link key={i} href="/home/products/33" className="">
             <div className="relative bg-slate-100 w-[200px] h-[270px] max-sm:w-[119px] max-sm:h-[180px]"> {/* Ensure explicit width/height */}
               <Image
                 src={item.image}

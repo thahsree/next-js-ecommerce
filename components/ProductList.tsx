@@ -31,8 +31,8 @@ export const ProductList = ({ gender }: productListProps) => {
 
   return (
     <div className="flex w-full gap-3">
-      <div className="flex-[1] w-full flex flex-col px-1 py-5 text-gray-800 gap-3">
-        <div className="flex flex-col mb-7 gap-2">
+      <div className="flex-[1] w-full flex flex-col px-1 py-5 text-gray-800 gap-3 max-sm:hidden">
+        <div className="flex flex-col mb-7 gap-2 ">
           <h3 className="font-base font-extrabold mb-2">New Arrivals</h3>
           <p className={`w-max text-sm font-normal cursor-pointer hover:text-red-600 hover:underline underline-offset-2 ${active ? 'activefilter' : ''}`}>View All</p>
           <p className="w-max text-sm font-normal cursor-pointer hover:text-red-600 hover:underline underline-offset-2">Clothes</p>

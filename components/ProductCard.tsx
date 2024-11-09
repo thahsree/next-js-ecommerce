@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Product {
     image: string;
@@ -12,8 +13,7 @@ interface ProductCardProp {
 export const ProductCard = ({ product}: ProductCardProp) => {
 
     return (
-        <div className="flex flex-col h-[500px] w-[300px] items-start justify-center gap-4">
-            <div className="h-[80%] w-[100%] relative">
+        <Link href="/home/products/5" className="flex flex-col h-[500px] w-[300px] items-start justify-center gap-4 max-sm:h-[300px] max-sm:w-[180px]">            <div className="h-[80%] w-[100%] relative">
                 <Image src={product.image} fill alt="product-image" className="object-cover" />
                 <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
                 <h3 className="absolute top-2 right-3">
@@ -26,6 +26,6 @@ export const ProductCard = ({ product}: ProductCardProp) => {
                 <h3>{product.name}</h3>
                 <p>{product.price}</p>
             </div>
-        </div>
+        </Link>
     )
 }

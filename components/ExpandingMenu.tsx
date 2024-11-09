@@ -1,5 +1,6 @@
 "use client"
 import { listItemsData } from "@/constants";
+import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
 
 interface expandingMenuProps {
@@ -21,7 +22,7 @@ const ExpandingMenu = ({ section , setCurrentSelection }: expandingMenuProps) =>
                         <div  className="flex  gap-2 py-2  flex-col">
                         {
                             item.datas.map((data, idx) => (
-                                <p key={idx} className="text-sm font-normal max-md:text-xs text-gray-600 hover:text-black cursor-pointer">{data}</p>
+                                <Link href="/home/products" key={idx} className="text-sm font-normal max-md:text-xs text-gray-600 hover:text-black cursor-pointer">{data}</Link>
                             ))
                         }
                             

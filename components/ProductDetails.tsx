@@ -2,16 +2,16 @@ import Image from "next/image"
 
 export const ProductDetails = () => {
     return (
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-7 max-sm:gap-4">
 
             {/* heading section */}
-            <div className="flex flex-col gap-4">
-                <div className="flex justify-between">
-                    <div className="text-3xl font-normal">
+            <div className="flex flex-col gap-4 max-sm:gap-2 max-sm:items-center">
+                <div className="flex justify-between max-sm:justify-center max-sm:flex-col max-sm:items-center max-sm:mt-5">
+                    <div className="text-3xl font-normal max-sm:text-xl">
                         <h3>BRAND NAME</h3>
                         <h3>Over sized shirt</h3>
                     </div>
-                    <div className="text-3xl font-normal flex gap-2">
+                    <div className="text-3xl font-normal flex gap-2 max-sm:text-lg ">
                         <p className="line-through text-gray-500 font-thin">AED 258</p>
                         <p>AED 167.00</p>
                     </div>
@@ -31,7 +31,7 @@ export const ProductDetails = () => {
             <hr className="" />
 
             {/* color section */}
-            <div className="flex flex-col">
+            <div className="flex flex-col max-sm:items-center">
                 <div className="flex gap-3 items-center">
                     <h3 className="font-semibold text-base">Color :</h3>
                     <h3 className="font-thin text-base">Blue</h3>
@@ -44,51 +44,52 @@ export const ProductDetails = () => {
 
             {/* size section */}
 
-            <div className="flex flex-col gap-3">
-                <div className="flex justify-between items-center">
+            <div className="flex flex-col gap-3 max-sm:items-center max-sm:gap-5">
+                <div className="flex justify-between items-center max-sm:w-[100vw] max-sm:justify-evenly">
                     <h3 className="font-semibold text-base">Size</h3>
                     <p className="underline underline-offset-2 text-sm text-gray-600">Size Guide</p>
                 </div>
-                <div className="flex gap-5">
-                    <div className="h-[50px] w-[50px] p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">XS</div>
-                    <div className="h-[50px] w-[50px] p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">S</div>
-                    <div className="h-[50px] w-[50px] p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">M</div>
-                    <div className="h-[50px] w-[50px] p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">L</div>
-                    <div className="h-[50px] w-[50px] p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">XL</div>
-                    <div className="h-[50px] w-[50px] p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">XXL</div>
+                <div className="flex gap-5 max-sm:gap-2">
+                    <div className="h-[50px] w-[50px] max-sm:h-[20px] max-sm:p-5  max-sm:w-[20px] max-sm:text-xs p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">XS</div>
+                    <div className="h-[50px] w-[50px] max-sm:h-[20px] max-sm:p-5  max-sm:w-[20px] max-sm:text-xs p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">S</div>
+                    <div className="h-[50px] w-[50px] max-sm:h-[20px] max-sm:p-5  max-sm:w-[20px] max-sm:text-xs p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">M</div>
+                    <div className="h-[50px] w-[50px] max-sm:h-[20px] max-sm:p-5  max-sm:w-[20px] max-sm:text-xs p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">L</div>
+                    <div className="h-[50px] w-[50px] max-sm:h-[20px] max-sm:p-5  max-sm:w-[20px] max-sm:text-xs p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">XL</div>
+                    <div className="h-[50px] w-[50px] max-sm:h-[20px] max-sm:p-5  max-sm:w-[20px] max-sm:text-xs p-2 flex items-center justify-center text-base bg-gray-200 cursor-pointer rounded-full">XXL</div>
                 </div>
             </div>
 
             {/* cart and wishlist */}
             <div className="flex w-full items-center justify-center gap-6">
-                <button className="py-3 px-10 border bg-black text-white">ADD TO BAG</button>
-                <button className="py-3 px-10 border border-black">ADD TO WISHLIST</button>
+                <button className="py-3 px-10 max-sm:py-2 max-sm:px-5 border bg-black text-white max-sm:text-sm">ADD TO BAG</button>
+                <button className="py-3 px-10 max-sm:py-2 max-sm:px-5 border border-black max-sm:text-sm">ADD TO WISHLIST</button>
             </div>
 
             <hr />
 
             {/* delivery instructions */}
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 max-sm:px-5">
                 <div className="flex gap-5">
                     <Image src="/truck.svg" height={50} width={50} alt="icons" className="" />
                     <div className="flex flex-col text-gray-700">
                         <h3 className="font-bold text-base">Free Shipping</h3>
-                        <p className="font-light text-sm">On all orders above 100.00 AED.<span className="underline underline-offset-2 ml-2">Learn more</span></p>
+                        <p className="font-light text-sm max-sm:text-xs">On all orders above 100.00 AED.<span className="underline underline-offset-2 ml-2">Learn more</span></p>
                     </div>
                 </div>
                 <div className="flex gap-5">
                     <Image src="/box.svg" height={50} width={50} alt="icons" />
                     <div className="flex flex-col text-gray-700">
                         <h3 className="font-bold text-base">Easy Returns</h3>
-                        <p className="font-light text-sm">Extended Returns.<span className="underline underline-offset-2 ml-2">Learn more</span></p>
+                        <p className="font-light text-sm ">Extended Returns.<span className="underline underline-offset-2 ml-2">Learn more</span></p>
+                        <p className="font-light text-sm max-sm:text-xs">Extended Returns.<span className="underline underline-offset-2 ml-2">Learn more</span></p>
                     </div>
                 </div>
                 <div className="flex gap-5">
                     <Image src="/gift.svg" height={50} width={50} alt="icons" />
                     <div className="flex flex-col text-gray-700">
                         <h3 className="font-bold text-base">Send It As A Gift</h3>
-                        <p className="font-light text-sm">Add a free personalized note during checkout.<span className="underline underline-offset-2 ml-2">Learn more</span></p>
+                        <p className="font-light text-sm max-sm:text-xs">Add a free personalized note during checkout.<span className="underline underline-offset-2 ml-2">Learn more</span></p>
                     </div>
                 </div>
 
@@ -96,7 +97,7 @@ export const ProductDetails = () => {
             </div>
 
             {/* product description */}
-            <div className="flex flex-col gap-2 text-gray-700">
+            <div className="flex flex-col gap-2 text-gray-700 max-sm:px-6">
                 <h3 className="font-bold text-base">Description Heading</h3>
                 <p className="text-sm font-normal"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officia at reiciendis alias quibusdam iusto voluptates explicabo. Blanditiis veritatis voluptate cum! Perspiciatis id totam a quis perferendis eum ab? Ducimus!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut saepe quasi. Mollitia neque perspiciatis quisquam perferendis, doloremque praesentium aperiam hic ducimus adipisci harum ipsam at labore atque reprehenderit magni.
