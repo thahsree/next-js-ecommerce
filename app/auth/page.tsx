@@ -27,7 +27,13 @@ export default function Login() {
             <p className="text-slate-700 text-sm">Sign in with Google</p>
 
           </div>
-          <div></div>
+          <div className="flex flex-col gap-3 mt-3 ">
+            <p className="text-slate-700 text-sm w-[250px]">Don't have an account yet?</p>
+            <div className="border border-slate-700 px-4 py-3 flex items-center gap-3 w-max">
+              <Image src="/account.svg" height={20} width={20} alt="account"/>
+              <p className="text-slate-700 text-sm">Sign up here</p>
+            </div>
+          </div>
 
         </div>
       </div>
