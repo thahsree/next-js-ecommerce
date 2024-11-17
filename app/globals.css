@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+input::-ms-reveal,
+input::-ms-clear,
+input::-webkit-clear-button,
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
+}
+
+
 * {
   margin: 0;
   padding: 0;

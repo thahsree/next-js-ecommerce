@@ -37,7 +37,7 @@ const Navbar = () => {
                     <p className={navProp}>
                         <Image src="/search.svg" width={20} height={20} alt="search" />
                     </p>
-                    <Link href='/auth' className={navProp}>
+                    <Link href='/account' className={navProp}>
                         <Image src="/user.svg" width={20} height={20} alt="user" />
                     </Link>
                     <p className={navProp}>

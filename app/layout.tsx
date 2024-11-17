@@ -1,4 +1,5 @@
 import { Footer, Navbar } from "@/components";
+import { Provider } from "@/components/Provider";
 import type { Metadata } from "next";
 import './globals.css';
 
@@ -23,10 +24,13 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         />
       </head>
+
       <body className="relative">
-        <Navbar />
-        {children}
-        <Footer />
+        <Provider>
+          <Navbar />
+            {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   );
