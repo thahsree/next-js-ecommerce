@@ -22,7 +22,7 @@ export default function LoginForm({ type , submitForm , setUserName , setPasswor
     });
 
     return (
-        <div className={`border flex flex-col w-[95%] gap-7 p-12 max-md:justify-center  ${type === 'signup' && 'my-20'}`}>
+        <div className={`border flex flex-col  gap-7 p-12 max-md:justify-center  ${type === 'signup' ? 'my-20' :'w-[95%]'}`}>
             {
                 type === 'signup' && <h3 className="text-lg font-bold text-center">SIGN UP</h3>
             }

@@ -19,7 +19,7 @@ export const connectDB = async():Promise<void> => {
         await mongoose.connect(process.env.MONGODB_URI as string,{
             dbName:'everlane_store',
             useNewUrlParser:true,
-            useUnifiedTopology:true
+       
 
         } as ConnectOptions)
 
