@@ -33,7 +33,7 @@ const Hero = () => {
           {/* Content */}
         </div>
         <div className="relative w-[50%] h-full max-sm:w-full">
-          <Image src='/main4.jpg' fill alt="main" className="object-cover" />
+          <Image src='/Main4.jpg' fill alt="main" className="object-cover" />
           {/* Overlay for shading */}
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
