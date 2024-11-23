@@ -95,7 +95,7 @@ const Corousal = ({ activeItem, type }: CorousalProps) => {
                 src={item.image}
                 alt="image"
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
               />
               {

@@ -14,7 +14,7 @@ const ExpandingMenu = ({ section , setCurrentSelection }: expandingMenuProps) =>
     const filteredData = listItemsData.filter((item) => item.title === section)
     if (filteredData.length === 0) return null;
     return (
-        <div className="flex w-full justify-between z-50 p-2 bg-white border border-t-transparent max-sm:hidden" onMouseLeave={()=> setCurrentSelection("")}>
+        <div className="flex w-full justify-between navlist p-2 bg-white  border border-t-transparent max-sm:hidden" onMouseLeave={()=> setCurrentSelection("")}>
             {
                 filteredData[0].options.map((item, i) => (
                     <div key={i} className="flex flex-col p-12" >

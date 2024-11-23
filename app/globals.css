@@ -13,7 +13,9 @@ input::-webkit-outer-spin-button {
   display: none;
 }
 
-
+.navlist{
+  z-index: 1000 !important;
+}
 * {
   margin: 0;
   padding: 0;

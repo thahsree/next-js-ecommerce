@@ -40,9 +40,9 @@ const Navbar = () => {
                     <Link href='/account' className={navProp}>
                         <Image src="/user.svg" width={20} height={20} alt="user" />
                     </Link>
-                    <p className={navProp}>
+                    <Link href='/cart' className={navProp}>
                         <Image src="/shopping-cart.svg" width={20} height={20} alt="cart" />
-                    </p>
+                    </Link>
                 </div>
             </nav>
             {
