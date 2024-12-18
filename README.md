@@ -40,17 +40,13 @@ An E-commerce web application with essential features like product listing, user
 
 3. **Set Up Environment Variables**:
    Create a `.env` file in the root directory and add the following:
-   ```env
-   NEXTAUTH_SECRET="34fkzI+GhYdh24kgediam9CDKIWUk0inbXC43hRaIvw=" # Added by `npx auth`. Read more: https://cli.authjs.dev
+   ```bash
+   NEXTAUTH_SECRET="your secret" 
+   MONGODB_URI= your mongo-db uri
+   GOOGLE_CLIENT_ID= your client id
+   GOOGLE_CLIENT_SECRET= your client secret id
+   NEXTAUTH_URL= your url
    ```
-
-MONGODB_URI= your mongo-db uri
-GOOGLE_CLIENT_ID= your client id
-GOOGLE_CLIENT_SECRET= your client secret id
-
-NEXTAUTH_URL= your url
-
-````
 
 4. **Start the Development Server**:
 ```bash
