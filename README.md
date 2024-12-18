@@ -42,16 +42,16 @@ An E-commerce web application with essential features like product listing, user
    Create a `.env` file in the root directory and add the following:
    ```bash
    NEXTAUTH_SECRET="your secret" 
-   MONGODB_URI= your mongo-db uri
-   GOOGLE_CLIENT_ID= your client id
-   GOOGLE_CLIENT_SECRET= your client secret id
-   NEXTAUTH_URL= your url
+   MONGODB_URI= "your mongo-db uri"
+   GOOGLE_CLIENT_ID= "your client id"
+   GOOGLE_CLIENT_SECRET= "your client secret id"
+   NEXTAUTH_URL= "your url"
    ```
 
 4. **Start the Development Server**:
-```bash
-npm run dev
-````
+   ```bash
+   npm run dev
+   ````
 
 Access the application at `http://localhost:3000`.
 
